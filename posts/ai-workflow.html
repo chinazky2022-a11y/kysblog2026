@@ -1,1 +1,51 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="一套简单、可重复使用的 AI 工作流。"><title>别急着让 AI 替你工作 · 序界 NEXUS</title><link rel="stylesheet" href="../assets/style.css"></head><body><header class="site-header"><a class="brand" href="../">序界<span>NEXUS</span></a><nav><a href="../">← 返回首页</a><button id="theme" aria-label="切换明暗主题">◐</button></nav></header><main class="article"><header><p class="eyebrow">AI 实践 · 2026.07.11</p><h1>别急着让 AI 替你工作，<br>先把工作说明白</h1><p class="lead">多数 AI 结果不理想，不是模型不够强，而是任务本身还没有被说清楚。</p></header><article><p>很多人使用 AI 的方式，是把一句模糊要求丢进对话框，然后期待得到成品。结果往往看起来完整，却不能直接使用。问题通常不在提示词技巧，而在于我们没有先定义什么叫“做好”。</p><h2>第一步：先写验收标准</h2><p>开始之前，先用三句话说明目标、读者和限制。例如：为没有技术背景的人写一篇教程；读完能独立完成部署；全文不超过一千字，不使用未解释的术语。验收标准越具体，返工越少。</p><h2>第二步：把任务拆成三个阶段</h2><p>先让 AI 整理信息和提出结构，再逐段完成内容，最后按照验收标准检查。不要在一次请求里同时要求研究、判断、写作和校对。分阶段处理，能够更早发现方向错误。</p><blockquote>AI 最适合加速已经想清楚的流程，而不是替代尚未发生的思考。</blockquote><h2>第三步：保留自己的判断</h2><p>事实需要核实，建议需要结合场景，最终表达也应该由人决定。可以让 AI 列出不确定之处、反对意见和遗漏项，但不要把“看起来合理”当作“已经正确”。</p><h2>一个可复用的简单模板</h2><p>每次只需写清五项：我要完成什么、给谁使用、已有材料、必须遵守的限制，以及怎样算完成。这个模板不花哨，却比收集大量所谓万能提示词更可靠。</p></article></main><footer><span>© 2026 序界 NEXUS</span><a href="../">返回首页</a></footer><script src="../assets/main.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="一套简单、可重复使用的 AI 工作流。" />
+    <title>别急着让 AI 替你工作 · 序界 NEXUS</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../">序界<span>NEXUS</span></a>
+      <nav>
+        <a href="../">← 返回首页</a
+        ><button id="theme" aria-label="切换明暗主题">◐</button>
+      </nav>
+    </header>
+    <main class="article">
+      <header>
+        <p class="eyebrow">AI 实践 · 2026.07.11</p>
+        <h1>别急着让 AI 替你工作，<br />先把工作说明白</h1>
+        <p class="lead">
+          多数 AI 结果不理想，不是模型不够强，而是任务本身还没有被说清楚。
+        </p>
+      </header>
+      <article>
+      <p>用一个真实任务演示：把会议记录整理成可以执行的任务清单。</p>
+      <h2>先看失败写法</h2>
+      <pre><code>帮我总结一下这段会议记录。</code></pre>
+      <p>它会生成通顺的摘要，但负责人、日期和未决问题通常混在段落里，无法直接执行。</p>
+      <h2>可直接复制的写法</h2>
+      <pre><code>任务：把会议记录整理成行动清单。
+输出：事项｜负责人｜截止日期｜待确认。
+没有负责人或日期时写“未指定”，不要猜。
+每项以动词开头；决策与行动分开。
+完成标准：可以直接复制进任务管理工具。</code></pre>
+      <h2>第二轮只做核对</h2>
+        <p>
+        再要求 AI 逐项对照原文检查：是否虚构负责人或日期；是否遗漏带有“需要、必须、下周、之前”的句子；哪些结论缺少原文证据。只返回问题清单，不要改写。
+        </p>
+      <h2>三个判断</h2>
+        <p>
+        输入材料是否已经存在？输出格式能否明确描述？结果是否可以低成本复核？三项都是“是”才适合交给 AI，否则先补材料或缩小任务。
+        </p>
+      <p>价格、政策、健康和法律信息仍需打开原始来源核实，不能把“看起来合理”当作正确。</p>
+      </article>
+    </main>
+    <footer><span>© 2026 序界 NEXUS</span><a href="../">返回首页</a></footer>
+    <script src="../assets/main.js"></script>
+  </body>
+</html>
