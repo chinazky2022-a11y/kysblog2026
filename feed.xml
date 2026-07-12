@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"><channel>
+  <title>序界 NEXUS</title><link>https://kysblog2026.pages.dev/</link><description>技术、工具与数字生活</description><language>zh-cn</language>
+  <item><title>别急着让 AI 替你工作，先把工作说明白</title><link>https://kysblog2026.pages.dev/posts/ai-workflow</link><guid>https://kysblog2026.pages.dev/posts/ai-workflow</guid><pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate><description>用会议记录案例说明一套可以复核的 AI 工作流。</description></item>
+  <item><title>为什么个人博客适合从静态网站开始</title><link>https://kysblog2026.pages.dev/posts/static-site</link><guid>https://kysblog2026.pages.dev/posts/static-site</guid><pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate><description>静态网站的发布、备份与适用范围。</description></item>
+  <item><title>笔记越记越乱？试试只保留这三类</title><link>https://kysblog2026.pages.dev/posts/digital-notes</link><guid>https://kysblog2026.pages.dev/posts/digital-notes</guid><pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate><description>一套四文件夹、每周十分钟维护的笔记方法。</description></item>
+</channel></rss>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kysblog2026.pages.dev/sitemap.xml

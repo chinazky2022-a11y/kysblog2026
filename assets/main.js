@@ -53,3 +53,27 @@ function setLanguage(lang) {
 }
 switcher.addEventListener('click', event => event.target.dataset.lang && setLanguage(event.target.dataset.lang));
 setLanguage(localStorage.getItem('language') || 'zh');
+
+const searchInput = document.querySelector('#post-search');
+const filterButtons = [...document.querySelectorAll('[data-filter]')];
+const postCards = [...document.querySelectorAll('.post-card')];
+let activeFilter = 'all';
+function filterPosts() {
+  const query = (searchInput?.value || '').trim().toLowerCase();
+  let visible = 0;
+  postCards.forEach(card => {
+    const categoryMatch = activeFilter === 'all' || card.dataset.category === activeFilter;
+    const text = `${card.textContent} ${card.dataset.search || ''}`.toLowerCase();
+    const show = categoryMatch && (!query || text.includes(query));
+    card.hidden = !show;
+    if (show) visible += 1;
+  });
+  const empty = document.querySelector('#no-results');
+  if (empty) empty.hidden = visible !== 0;
+}
+searchInput?.addEventListener('input', filterPosts);
+filterButtons.forEach(button => button.addEventListener('click', () => {
+  activeFilter = button.dataset.filter;
+  filterButtons.forEach(item => item.classList.toggle('active', item === button));
+  filterPosts();
+}));
